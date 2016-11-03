@@ -34,22 +34,6 @@ To send the reports to an alternate directory use this configuration:
       report: '/my-special/directory'
     }
 
-It makes sense to clear the report directory before generating new
-reports via acceptance tests. The object returned from configuring the
-library has a method `clearReport`, that will destroy the report
-directory. You will want to hook this into the beginning of your test
-run in some way:
-
-    let accessibilityAcceptance = require('continua11y-acceptance')(config);
-    accessibilityAcceptance.clearReport((err) => {
-      if (err) { throw err; }
-      // do something now that test setup is finished
-    });
-
-Currently reporting is only available as json, one file per path and
-size. The goal of reporting is to allow CI processes to aggregate this
-data and send it to a reporting dashboard.
-
 ## Contributing
 
 See [CONTRIBUTING](CONTRIBUTING.md) for additional information.
