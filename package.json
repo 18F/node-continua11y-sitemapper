@@ -1,0 +1,25 @@
+{
+  "name": "continua11y-sitemapper",
+  "version": "0.1.0",
+  "description": "Continua11y report generation for sites with public pages that should be scraped via a sitemap",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/18F/node-continua11y-sitemapper.git"
+  },
+  "keywords": [
+    "accessibility",
+    "sitemap",
+    "scrape",
+    "report"
+  ],
+  "author": "baccigalupi",
+  "license": "CC0-1.0",
+  "bugs": {
+    "url": "https://github.com/18F/node-continua11y-sitemapper/issues"
+  },
+  "homepage": "https://github.com/18F/node-continua11y-sitemapper#readme"
+}
